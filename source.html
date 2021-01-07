@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Google by corcucodes</title>
+    <title>Google by KonradG13</title>
 </head>
 <style>
 a:link{
     text-decoration: none;
 }
+
 .pagestructure{
     width: 100%;
     height: 100vh;
@@ -21,6 +21,7 @@ a:link{
     "buttonforsearching buttonlucky"
     "footfirst footfirst"
     "helplink businesslink"
+
 }
 .topbar{
     grid-area: header;
@@ -29,23 +30,21 @@ a:link{
     font-size: 13px;
     margin-top: 10px;
     justify-self: end;
-    display: grid;
+    display:grid;
     grid-template-columns: 34px 73px 30px 45px 30px;
     justify-items: end;
     align-items: center;
 }
 .topbar a:link{
-    text-decoration:none;
-    color: rgba(224, 21, 21, 0.87);
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
 }
-
 .logo{
     grid-area: land;
     padding-top: 109px;
     padding-bottom: 32px;
     justify-self: center;
     }
-    
 .searchbar{
     grid-area: search;
     margin-top: 5px;
@@ -64,9 +63,8 @@ a:link{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
 .searchimg{justify-self: center;}
-.voiceimg{justify-self: right;}
+.voiceimg{justify-self: left;}
 .searchform{
     margin-top: 5px;
     justify-self: left;
@@ -93,9 +91,9 @@ a:link{
 .higherbar{
     grid-area: footfirst;
     background: #f2f2f2;
-    color: rgb(95,99,104); 
+    color: rgba(0,0,0,0.54);
     font-family: arial,sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     padding-left: 30px;
     padding-top: 11.5px;
 }
@@ -109,6 +107,7 @@ a:link{
     padding-top: 11.5px;
     display: grid;
     grid-template-columns: 96px 83px 64px 144px 1fr;
+    
 }
 .lowerbarhelp a:link{
     text-decoration: none;
@@ -117,7 +116,7 @@ a:link{
 .lowerbarbusiness{
     grid-area: businesslink;
     background: #f2f2f2;
-    color: rgb(228, 51, 7);
+    color: rgb(95,99,104);
     font-family: arial,sans-serif;
     font-size: 14px;
     padding-left: 30px;
@@ -153,36 +152,29 @@ a:link{
     height: 32px;
     width: 32px;
 }
-
-
-
-
-
 </style>
 <body>
-    <div class = "pagestructure">
+    <div class="pagestructure">
         <div class="topbar">
-            <div><a href="#">Gmailz</a></div>
-            <div><a href="#">Imagez</a></div>
-            <div><a href="#"><img src="search.png" width="13px" height="13px"></a></div>
-            <div><a href="#"><img src="accountphoto.jpg" class="account"></a></div>
-        </div>
- 
-        <div class = "logo">
-            <img src="logo.png">
-        </div>
+            <div><a href="#">Gmail</a></div>
+            <div><a href="#">Images</a></div>
+            <div><a href="#"><img src="apps.png" alt="Google Apps Access" width="13px" height="13px"> </a></div>
+            <div><a href="#">
+                <img src="https://lh3.googleusercontent.com/ogw/ADGmqu_hlcnQa-ZU9S5-jSBoS73u_QUTYP4LUggTYUCU=s32-c-mo" class="account" alt="Account access" >
+            </a></div>
 
-        <div class = "searchbar">
-            <div class = "searchimg"><a href="#"><img src="search.png" width="20px" height="20px"></a></div>
+        </div>
+        <img  class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google logo">
+        <div class="searchbar">
+            
+            <div class="searchimg"><a href="#"><img src="search.png" alt="Search Button" width="20px" height="20px"> </a></div>
             <input type="text" placeholder="" class="searchform">
-            <div class="voiceimg"><a href="#"><img src="voice.png" width="24px" height="24px"></a></div>
-        </div>    
-
-        <div class="searchbutton"><button class="buttons" type="submit">Search Da Googz</button></div>
-        
-        <div class="feelinglucky"><button class="buttons" type="submit">Feelin lucky, punk?</button></div>
-
-        <div class="higherbar"><a href="#">Country</a></div>
+            <div class="voiceimg"><a href="#"><img src="voice.png" alt="Voice Search" width="24px" height="24px"> </a></div>
+        </div>
+        <div class="searchbutton"><button class="buttons" type="submit">Google Search</button></div>
+        <div class="feelinglucky"><button class="buttons" type="button">I'm Feeling Lucky</button></div>
+        <div class="higherbar">Country</div>
         <div class="lowerbarhelp">
             <div><a href="#">Advertising</a></div>
             <div><a href="#">Business</a></div>
@@ -194,12 +186,9 @@ a:link{
             <div><a href="#">Privacy</a></div>
             <div><a href="#">Terms</a></div>
             <div><a href="#">Settings</a></div>
+            
         </div>
-
-
-
-
-
+    </div>
 
 </body>
 </html>
